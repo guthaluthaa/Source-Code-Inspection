@@ -9,7 +9,7 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
 | Cliente | Usuário da máquina de vender bilhetes.|
 
 ## 1.2. Diagrama dos Casos de Uso
-![Captura de tela 2024-10-02 235552](https://github.com/user-attachments/assets/90ab2a7f-59b7-42e0-9b2a-c8403bb32833)
+[![Captura de tela 2024-10-02 235552](https://github.com/user-attachments/assets/90ab2a7f-59b7-42e0-9b2a-c8403bb32833)](https://github.com/guthaluthaa/Source-Code-Inspection/blob/guthaluthaa-patch-doc-1/doc/Captura%20de%20tela%202024-10-02%20235552.png)
 
 
 ## 1.3. Especificação dos Casos de Uso
