@@ -1,7 +1,7 @@
 # Projeto Orientado a Objetos
 
 ## 2.1. Diagrama de Classes Principal
-*(Include image here)*
+[*(Include image here)*](https://github.com/guthaluthaa/Source-Code-Inspection/blob/guthaluthaa-patch-doc-1/doc/Captura%20de%20tela%202024-10-02%20235705.png)
 
 ## 2.2. Diagrama de Classes de Interação
 *(Include image here)*
