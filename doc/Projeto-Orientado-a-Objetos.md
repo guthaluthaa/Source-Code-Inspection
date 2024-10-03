@@ -8,7 +8,8 @@
 
 
 ## 2.3. Diagrama de Sequência – Inserir Dinheiro
-*(Include image here)*
+![Captura de tela 2024-10-02 000904](https://github.com/guthaluthaa/Source-Code-Inspection/blob/guthaluthaa-patch-doc-1/doc/Captura%20de%20tela%202024-10-03%20000904.png)
+
 
 ## 2.4. Diagrama de Sequência – Solicitar Bilhete
 *(Include image here)*
