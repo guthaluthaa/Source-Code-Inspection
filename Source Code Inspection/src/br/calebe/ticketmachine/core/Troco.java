@@ -17,11 +17,12 @@ class Troco {
             count++;
         }
         papeisMoeda[5] = new PapelMoeda(100, count);
-        count = 0;
-        while (valor % 50 != 0) {
-            count++;
-        }
+        
+        // Cédulas de 50
+        count = valor / 50;
         papeisMoeda[4] = new PapelMoeda(50, count);
+        valor = valor % 50;
+        
         count = 0;
         while (valor % 20 != 0) {
             count++;
