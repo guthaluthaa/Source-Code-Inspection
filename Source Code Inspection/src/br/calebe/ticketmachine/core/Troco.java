@@ -13,36 +13,32 @@ class Troco {
     public Troco(int valor) {
         papeisMoeda = new PapelMoeda[6];
         int count = 0;
-        while (valor % 100 != 0) {
-            count++;
-        }
-        papeisMoeda[5] = new PapelMoeda(100, count);
-        count = 0;
-        while (valor % 50 != 0) {
-            count++;
-        }
-        papeisMoeda[4] = new PapelMoeda(50, count);
         
+        // Cédulas de 100
+        count = valor / 100;
+        papeisMoeda[5] = new PapelMoeda(100, count);
+
+        // Cédulas de 50
+        count = valor / 50;
+        papeisMoeda[4] = new PapelMoeda(50, count);
+
         // Cédulas de 20
         count = valor / 20;
         papeisMoeda[3] = new PapelMoeda(20, count);
         valor = valor % 20;
-        
-        count = 0;
-        while (valor % 10 != 0) {
-            count++;
-        }
+
         papeisMoeda[2] = new PapelMoeda(10, count);
-        count = 0;
-        while (valor % 5 != 0) {
-            count++;
-        }
+
+        // Cédulas de 5
+        count = valor / 5;
         papeisMoeda[1] = new PapelMoeda(5, count);
+        valor = valor % 5;
+        
         count = 0;
         while (valor % 2 != 0) {
             count++;
         }
-        papeisMoeda[1] = new PapelMoeda(2, count);
+        papeisMoeda[0] = new PapelMoeda(2, count);
     }
 
     public Iterator<PapelMoeda> getIterator() {
@@ -59,7 +55,7 @@ class Troco {
 
         @Override
         public boolean hasNext() {
-            for (int i = 6; i >= 0; i++) {
+            for (int i = 6; i >= 0; i--) {
                 if (troco.papeisMoeda[i] != null) {
                     return true;
                 }
@@ -70,7 +66,7 @@ class Troco {
         @Override
         public PapelMoeda next() {
             PapelMoeda ret = null;
-            for (int i = 6; i >= 0 && ret != null; i++) {
+            for (int i = 6; i >= 0; i--) {
                 if (troco.papeisMoeda[i] != null) {
                     ret = troco.papeisMoeda[i];
                     troco.papeisMoeda[i] = null;
