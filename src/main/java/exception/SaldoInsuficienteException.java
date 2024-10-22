@@ -1,4 +1,4 @@
-package br.calebe.ticketmachine.main.java.exception;
+package src.main.java.exception;
 
 /**
  *

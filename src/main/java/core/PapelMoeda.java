@@ -1,4 +1,4 @@
-package br.calebe.ticketmachine.main.java.core;
+package src.main.java.core;
 
 /**
  *
