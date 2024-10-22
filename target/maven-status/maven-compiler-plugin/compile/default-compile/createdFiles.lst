@@ -1,6 +1,6 @@
-src\main\java\core\Troco.class
-src\main\java\exception\SaldoInsuficienteException.class
-src\main\java\core\Troco$TrocoIterator.class
-src\main\java\exception\PapelMoedaInvalidaException.class
-src\main\java\core\PapelMoeda.class
-src\main\java\core\TicketMachine.class
+core\PapelMoeda.class
+core\Troco.class
+exception\SaldoInsuficienteException.class
+core\TicketMachine.class
+exception\PapelMoedaInvalidaException.class
+core\Troco$TrocoIterator.class

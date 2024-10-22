@@ -1,15 +1,33 @@
-package src.test.java;
-import src.main.java.core.TicketMachine;
+
+import core.TicketMachine;
+import exception.PapelMoedaInvalidaException;
+import exception.SaldoInsuficienteException;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TicketMachineTest {
-    @Test(exception = SaldoInsuficienteException)
-    public void testSomaSimples() {
-        TicketMachine T = new TicketMachine(5); 
-        T.inserir(5);
-        String ticket = T.imprimir();
-        assertEquals(5, ticket, "A soma de 2 + 3 deve ser 5");
+    @Test
+    public void InserirSaldoTicketMachine() throws PapelMoedaInvalidaException {
+        TicketMachine T = new TicketMachine(5);
+
+        T.inserir(10);
+
+        assertEquals(10, T.getSaldo());
     }
+
+    // @Test
+    // public void DescontarSaldoApósImprimirTicketMachine() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
+    //     TicketMachine T = new TicketMachine(5);
+        
+    //     T.inserir(10);
+    //     T.imprimir();
+
+    //     assertEquals(5, T.getSaldo());
+    // }
 }
+
+// assertThrows(PapelMoedaInvalidaException.class, () ->{
+//     TicketMachine T = new TicketMachine(5); 
+//     T.inserir(10);
+// });

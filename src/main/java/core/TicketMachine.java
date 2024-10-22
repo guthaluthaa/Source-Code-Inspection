@@ -1,9 +1,9 @@
-package src.main.java.core;
+package core;
 
 import java.util.Iterator;
 
-import src.main.java.exception.PapelMoedaInvalidaException;
-import src.main.java.exception.SaldoInsuficienteException;
+import exception.PapelMoedaInvalidaException;
+import exception.SaldoInsuficienteException;
 
 /**
  *
