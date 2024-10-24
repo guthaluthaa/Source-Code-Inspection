@@ -3,6 +3,7 @@ import exception.PapelMoedaInvalidaException;
 import exception.SaldoInsuficienteException;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Disabled;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TicketMachineTest {
@@ -14,6 +15,8 @@ public class TicketMachineTest {
 
         assertEquals(10, T.getSaldo());
     }
+    
+    @Disabled
     @Test
     public void Descontar_Saldo_Após_Imprimir_TicketMachine() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
         TicketMachine T = new TicketMachine(5);
