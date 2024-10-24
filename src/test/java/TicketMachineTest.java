@@ -43,7 +43,7 @@ public class TicketMachineTest {
     }
 
     @Test
-    public void Iprimir_Com_Saldo_Insuficioente_Deve_Ativar_Exception_TicketMachine() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
+    public void Receber_Troco_TicketMachine() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
         TicketMachine T = new TicketMachine(5);
         
         T.getTroco();
