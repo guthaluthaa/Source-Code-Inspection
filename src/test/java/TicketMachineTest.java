@@ -16,7 +16,6 @@ public class TicketMachineTest {
         assertEquals(10, T.getSaldo());
     }
     
-    @Disabled
     @Test
     public void Descontar_Saldo_Após_Imprimir_TicketMachine() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
         TicketMachine T = new TicketMachine(5);
@@ -24,7 +23,7 @@ public class TicketMachineTest {
         T.inserir(10);
         T.imprimir();
 
-        assertEquals(-5, T.getSaldo());
+        assertEquals(5, T.getSaldo());
     }
 
     @Test

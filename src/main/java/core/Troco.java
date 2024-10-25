@@ -29,7 +29,7 @@ public class Troco {
         papeisMoeda[3] = new PapelMoeda(20, count);
         valor = valor % 20;
 
-        valor = valor / 10;
+        count = valor / 10;
         papeisMoeda[2] = new PapelMoeda(10, count);
         valor = valor % 10;
 
@@ -42,6 +42,10 @@ public class Troco {
         papeisMoeda[0] = new PapelMoeda(2, count);
         valor = valor % 2;
 
+    }
+
+    public PapelMoeda[] getPapeisMoedas(){
+        return papeisMoeda;
     }
 
     public Iterator<PapelMoeda> getIterator() {

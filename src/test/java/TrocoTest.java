@@ -13,8 +13,7 @@ class TrocoTest {
 
     @BeforeEach
     void setUp() {
-        // Inicializa com um valor que requer várias denominações
-        troco = new Troco(186); // Deve resultar em 1 nota de 100, 1 de 50, 1 de 20, 1 de 10, 1 de 5 e 3 de 2.
+        troco = new Troco(186);
     }
 
     @Test
@@ -22,6 +21,19 @@ class TrocoTest {
         Troco troco= new Troco(186);
 
         assertNotNull(troco, "Troco deve ser criado com sucesso");
+    }
+
+    @Test
+    public void testTroco186() {
+        Troco troco = new Troco(186);
+        PapelMoeda[] papeisMoeda = troco.getPapeisMoedas();
+        
+        assertEquals(1, papeisMoeda[5].getQuantidade()); // 1 nota de 100
+        assertEquals(1, papeisMoeda[4].getQuantidade()); // 1 nota de 50
+        assertEquals(1, papeisMoeda[3].getQuantidade()); // 1 nota de 20
+        assertEquals(1, papeisMoeda[2].getQuantidade()); // 1 nota de 10
+        assertEquals(1, papeisMoeda[1].getQuantidade()); // 1 nota de 5
+        assertEquals(0, papeisMoeda[0].getQuantidade()); // 0 notas de 2
     }
 
     @Test
