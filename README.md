@@ -1,4 +1,4 @@
-Source-Code-Inspection ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/guthaluthaa/Source-Code-Inspection/.github/workflows/maven.yml)
+Source-Code-Inspection |  ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/guthaluthaa/Source-Code-Inspection/.github/workflows/maven.yml)
 
 
 ======================
