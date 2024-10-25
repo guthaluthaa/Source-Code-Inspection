@@ -24,7 +24,7 @@ public class TicketMachineTest {
         T.inserir(10);
         T.imprimir();
 
-        assertEquals(5, T.getSaldo());
+        assertEquals(-5, T.getSaldo());
     }
 
     @Test

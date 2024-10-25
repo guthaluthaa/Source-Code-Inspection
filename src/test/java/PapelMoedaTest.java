@@ -22,4 +22,15 @@ public class PapelMoedaTest {
 
         assertEquals(5, valor);
     }
+
+    @Test
+    public void Construtor_Sucesso_PapelMoeda() {
+        int valorEsperado = 20;
+        int quantidadeEsperada = 5;
+        
+        PapelMoeda papelMoeda = new PapelMoeda(valorEsperado, quantidadeEsperada);
+        
+        assertEquals(valorEsperado, papelMoeda.getValor());
+        assertEquals(quantidadeEsperada, papelMoeda.getQuantidade());
+    }
 }
